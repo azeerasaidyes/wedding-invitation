@@ -1,4 +1,4 @@
-<audio id="weddingSong" autoplay loop>
+<audio id="weddingSong" loop>
   <source
     src="assets/audio/tiga.mp3"
     type="audio/mpeg"
@@ -9,22 +9,20 @@
   <img src="assets/img/playpause.png" width="24" height="24" />
 </button>
 <header>
-  The Wedding of
-  <p>FAZREENY & AKMAL</p>
-  <img src="assets/img/locket4.png" />
+  <!--The Wedding of
+  <span style="font-family: 'Core Bandi Face W01 Regular';">FAZREENY & AKMAL</span>-->
+  <img src="assets/img/locket3.png" />
 </header>
 <div id="dateSection">
   <div>
     <img src="assets/img/tunang.png" />
   </div>
   <div class="right">
-    <span style="font-size: 11px; font-family: 'Jane Austen'"
+    <span style="font-size: 19px; font-family: 'Moontime'"
       >We Are Getting Married</span
     ><br />
-    <span style="font-size: 25px; font-family: 'DM Serif Text'"
-      >1st January 2026</span
-    ><br /><br />
-    <span style="font-size: 12px">{{ countdown }}</span>
+    <h1>1st January 2026</h1>
+    <span style="font-size: 10px">{{ countdown }}</span>
   </div>
 </div>
 <div id="invitationSection">
@@ -32,7 +30,7 @@
 </div>
 <div id="locationSection">
   <h1>Location</h1>
-  <img src="assets/img/istac_pink.png" />
+  <img src="assets/img/istac.png" />
   <br /><br />
   <span>
     Dewan ISTAC-IIUM, <br />
@@ -44,6 +42,13 @@
   <button>
     <a href="https://maps.app.goo.gl/JeKihbbkP4JB27jNA">Get Directions</a>
   </button>
+</div>
+<div id="dressCodeSection" style="text-align: center; padding: 2em;">
+  <h1>Dress Code</h1>
+  <p>
+    Traditional Attire / Batik / Kebaya
+  </p>
+  <img src="assets/img/clothes.png" />
 </div>
 <div id="timelineSection">
   <h1>Timeline</h1>
@@ -140,6 +145,7 @@
   </div>
 </div>
 <div id="giftSection">
+  <img src="assets/img/bouquet.png" style="width: 100px">
   <h1>Your presence at our wedding is the greatest gift of all</h1>
   <span class="giftText">
     However, if you wish to honour us with a gift, a monetary gift would be
@@ -150,16 +156,16 @@
     Account number has been copied!
   </div>
   <button class="bankAcc" (click)="copyBankAccount()">
-    164799156762 (copy)
+    164799156762  <img src="assets/img/copy.png"/>
   </button>
   <p>Fazreeny Azeera Ahmad Kamar (Maybank)</p>
 </div>
 <div id="gallerySection">
   <div class="left">
-    <img src="assets/img/gallery.png" />
+    <img src="assets/img/gallery.png" style="transform: rotate(-2deg);"/>
   </div>
   <div class="right">
-    <span class="dear">Dear our beloved family & friends,</span><br /><br />
+    <span class="dear">Dear our beloved family & friends,</span><br />
     <span class="thanks">Thank You!</span><br />
     <span class="wish">
       for being part of our lives and supporting us through our journey.
@@ -175,7 +181,7 @@
   <div class="left">
     <button>
       <a href="https://wa.me/601119219225">
-        Fazreensya Ameera<br />
+        <span style="font-size: 13px">Fazreensya Ameera</span><br />
         Kakak Pengantin <br />
         +601119219225
       </a>
@@ -184,7 +190,7 @@
   <div class="right">
     <button>
       <a href="https://wa.me/60193303310">
-        Fazlinda Noor<br />
+        <span style="font-size: 13px">Fazlida Noor</span><br />
         Kakak Pengantin <br />
         +60193303310
       </a>
@@ -192,4 +198,4 @@
   </div>
 </div>
 
-<div style="font-size: 10px; padding-bottom: 5px">website by citrusfwen 🍊</div>
+<div style="font-size: 10px; padding-bottom: 10px">website by citrusfwen 🍊</div>
