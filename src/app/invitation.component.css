@@ -118,7 +118,7 @@ footer {
 /* TIMELINE SECTION */
 #timelineSection {
   text-align: center;
-  padding: 0em 2em 2em;
+  padding: 0em 1em 2em;
 
   h1 {
     margin: 0;
@@ -139,11 +139,13 @@ footer {
     line-height: 1em;
     margin: 0;
     padding-top: 1em;
+    font-size: 2.2em;
   }
 
   p {
     margin: 0;
     padding: 25px 0px 5px;
+    font-size: 17px;
   }
 
   select,
@@ -157,6 +159,7 @@ footer {
     padding: 10px;
     text-align: center !important;
     width: 200px;
+    font-size: 1em;
   }
 
   .rsvpForm {
@@ -245,10 +248,11 @@ footer {
 #gallerySection {
   text-align: center;
   display: inline-flex;
-  padding: 0 2em;
+  padding: 0 1em 0 1.5em;
 
   .left {
     display: inline-block;
+    padding-top: 18px;
 
     img {
       max-width: 150px;
@@ -259,26 +263,28 @@ footer {
 
   .right {
     display: inline-block;
-    padding: 10px 0px 25px 12px;
+    padding: 0px 0px 25px 12px;
     text-align: center;
     vertical-align: middle;
     font-family: "Core Bandi Face W01 Regular";
 
-    .dear {
-      font-size: 10px;
-    }
-
     .thanks {
-      font-size: 2.3em;
+      font-size: 2.6em;
       line-height: 2em;
       font-family: "Moontime";
     }
 
     .wish {
-      font-size: 14px;
+      font-size: 1.1em;
       font-weight: 300;
     }
   }
+}
+
+.dear {
+  padding-bottom: 20px; 
+  padding-left: 13px; 
+  font-size: 1.2em;
 }
 
 /* CONTACT SECTION */
@@ -289,10 +295,10 @@ footer {
   margin: 0 auto;
 
   button {
-    font-size: 10px;
+    font-size: 0.8em;
     padding: 8px 10px;
     background-color: var(--dusty-purple);
-    width: 140px;
+    width: 160px;
   }
 
   a {
@@ -312,7 +318,7 @@ footer {
   }
 
   h1 {
-    font-size: 13px;
+    font-size: 1em;
     font-family: "Core Bandi Face W01 Regular";
     padding-bottom: 8px;
     margin: 0;
