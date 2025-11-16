@@ -167,6 +167,13 @@ footer {
     font-size: 1.1em;
   }
 
+  .errorText {
+    color: #b30000;
+    font-size: 1em;
+    margin-top: 15px;
+    font-family: 'Core Bandi Face W01 Regular';
+  }
+
   .rsvpForm {
     height: auto;
     background-color: var(--dusty-purple);

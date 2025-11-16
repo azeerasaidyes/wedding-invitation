@@ -92,7 +92,7 @@
           <option value="TBC">TBC</option>
         </select>
       </div>
-
+     
       <!-- No. of Pax Field -->
       <div style="margin-bottom: 15px">
         <label for="paxInput">No. of Pax (including yourself)</label><br />
@@ -112,9 +112,8 @@
             text-align: center;
             font-family: 'Core Bandi Face W01 Regular';
           "
-          required
         />
-      </div>
+      </div>      
 
       <!-- Message Field -->
       <div style="margin-bottom: 15px">
@@ -131,8 +130,9 @@
       <!-- Submit Button -->
       <button
         class="submitButton"
-        type="submit"
-        [disabled]="!rsvpForm.form.valid || isSubmitting"
+        type="button"
+        (click)="onSubmit(rsvpForm)"
+        [disabled]="isSubmitting"
       >
         <ng-container *ngIf="!isSubmitting; else loading">
           Submit
@@ -146,6 +146,11 @@
     <!-- Success Message -->
     <div *ngIf="showSuccess" class="successText">
       💖 Thank you, {{ lastSubmittedName }}! Your RSVP has been received.
+    </div>
+
+    <!-- Error Message -->
+    <div *ngIf="showError" class="errorText">
+      Please kindly fill in your name and attendance 😊
     </div>
   </div>
 </div>
@@ -188,10 +193,10 @@
 <div id="contactSection" style="padding: 3.5em 0em 3em;">
   <h1>Contacts</h1>
   <div class="left" style="border: 1px solid var(--sage); padding: 15px 10px; border-radius: 35px; background-color: var(--sage); width: 40%">
-        <span style="font-size: 1.1em">Fazreensya Ameera</span><br />
-        Bride's sister <br />
-        <a href="tel:+601119219225"><button style="width: 50px; margin-top: 10px; border: 1px solid var(--cream);"><img src="assets/img/call.png" width="30" /></button></a>
-        <a href="https://wa.me/601119219225"><button style="width: 50px; margin-left: 10px; border: 1px solid var(--cream);"><img src="assets/img/whatsapp.png" width="30"/></button></a>
+        <span style="font-size: 1.1em">Ahmad Kamar</span><br />
+        Bride's father <br />
+        <a href="tel:+60193301091"><button style="width: 50px; margin-top: 10px; border: 1px solid var(--cream);"><img src="assets/img/call.png" width="30" /></button></a>
+        <a href="https://wa.me/60193301091"><button style="width: 50px; margin-left: 10px; border: 1px solid var(--cream);"><img src="assets/img/whatsapp.png" width="30"/></button></a>
   </div>
   <div class="left" style="border: 1px solid var(--sage); padding: 15px 10px; border-radius: 35px; background-color: var(--sage); margin-left: 10px; width: 40%">
         <span style="font-size: 1.2em">Fazlida Noor</span><br />

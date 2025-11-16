@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, NgForm } from "@angular/forms";
 
 @Component({
   selector: "app-header",
@@ -19,6 +19,7 @@ export class InvitationComponent {
   };
   isSubmitting = false;
   showSuccess = false;
+  showError = false;
   lastSubmittedName = "";
 
   showCopySuccess = false;
@@ -52,6 +53,20 @@ export class InvitationComponent {
       this.isPlaying = false;
     }
   }
+
+  onSubmit(form: NgForm) {
+  this.showError = false;
+
+  // Check required fields
+  if (!this.rsvp.name || !this.rsvp.attendance) {
+    this.showError = true;
+    setTimeout(() => this.showError = false, 3000);
+    return;
+  }
+
+  // If valid, do the real submit
+  this.submitRSVP();  
+}
 
   setupCountdown() {
     // Set the date we're counting down to
